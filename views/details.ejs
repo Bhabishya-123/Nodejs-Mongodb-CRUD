@@ -1,0 +1,31 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="details content">
+    <h1>Profile:</h1>
+    <h2><%= user.name%></h2>
+    <div class="content">
+      <p><span>Email:</span><%= user.email %></p>
+      <p><span>Password:</span><%= user.password %></p>
+      <p><span>Address:</span><%= user.address %></p>
+      <p><span>Number:</span><%= user.number %></p>
+    </div>
+  </div>
+
+
+ <div class="operation-btn">
+   <br>
+   <form action="/users/<%= user.name %>" method="post">
+    <button type="submit" >Remove</button>
+  </form>
+   <form action="/edit/<%= user.name %>/<%= action %>" method="edit">
+    <button type="submit">Updates</button>
+  </form>
+ </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
