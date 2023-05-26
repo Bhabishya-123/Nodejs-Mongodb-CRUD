@@ -1,9 +1,25 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "mongoose": "^6.2.10",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.15"
-  }
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "name": "nodejs-mongodb-crud",
+  "description": "-In this repository, I have created CRUD operation sites using Nodejs as backend with Nosql database.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
